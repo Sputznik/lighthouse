@@ -6,7 +6,8 @@
 }
 /* ARCHIVE VIDEOS */
 /* SINGLE VIDEOS */
-.single-videos .header3{
+.single-videos .header3,
+.archive.author .header3{
   min-height: 100px;
 }
 .single-videos .entry-author h1{
@@ -66,7 +67,16 @@
 .similar-videos{margin-bottom: 50px;}
 /* Similar Videos */
 
+.orbit-article .avatar {border-radius: 50%;}
+.articles-theme .orbit-author-meta {font-size: 14px;line-height: 14px;}
+.articles-theme .orbit-post-content h3 {font-size: 30px;font-weight: 700;}
+.articles-theme .post-excerpt {color: #555;}
+.orbit-read-more {color: #686868!important;border-color: #686868;}
+.post-nav{ margin-top: 30px; }
+.post-nav .pull-left,
+.post-nav .pull-right{ margin-bottom: 30px;}
 /* ORBIT ARTICLES */
+
 @media( min-width: 769px ){
   .articles-grid{
     grid-template-columns: 1fr 1fr 1fr;
@@ -78,8 +88,18 @@
   }
 }
 @media(max-width: 768px){
-  .articles-grid .orbit-article{
-    margin-bottom: 30px;
-  }
+  .articles-grid .orbit-article{margin-bottom: 30px;}
   .articles-video .orbit-article:last-child{margin-bottom: 0;}
+  .articles-theme .orbit-article {
+    grid-template-columns: 80px 1fr;
+    grid-gap: 10px;
+    display: grid;
+  }
+  .articles-theme .orbit-thumbnail-bg {min-height: 80px;}
+  .articles-theme .orbit-author {grid-template-columns: 0 1fr;}
+  .articles-theme .orbit-post-content h3 {font-size: 20px;}
+  .articles-theme .orbit-post-content {padding: 0;}
+  .articles-theme .avatar,
+  .articles-theme .post-excerpt,
+  .articles-theme .orbit-read-more {display: none;}
 }
